@@ -1,83 +1,98 @@
+package Lesson2;
+
+
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-       //Begin1◦Дана сторона квадрата a. Найти его периметр P = 4·a.
-        //Begin1◦Дана сторона квадрата a. Найти его периметр P = 4·a.
-        //Ввод или присвоение исодных данных
-        /*int a = 5;
-        //Вычисление результата
-@@ -47,6 +47,71 @@ public static void main(String[] args) {
-        int d = 2;
-        double c = (a + b) / (double)d;
-        System.out.println("Среднее арефметическое a и b:" + c);*/
-        //Begin9◦
-        //. Даны два неотрицательных числа a и b. Найти их среднее геометрическое, то есть квадратный корень из их произведения: √
-        //a·b.
-        /*double a = 3.45;
-        double b = 7.29;
-        double g_avg = Math.sqrt(a*b);
-        System.out.println(g_avg);*/
-        //Begin10◦
-        //Begin10◦
-        //. Даны два ненулевых числа. Найти сумму, разность, произведение и
-        //частное их квадратов.
-        /*int a = 5;
-        int b = 10;
-        int s = (a*a) + (b+b);
-        int d = (a+a) - (b+b);
-        int f = (a*a) * (a*a);
-        double c = (a*a) /(double)(b*b);
-        System.out.println("Сумма: " +s);
-        System.out.println("Разность: " +d);
-        System.out.println("Произведение: " +f);
-        System.out.println("Частное: " +c);
-         */
-        //Begin11◦
-        //. Даны два ненулевых числа. Найти сумму, разность, произведение и
-        //частное их модулей.
-        /*int a = -5;
-        int b = 24;
-        a = Math.abs(a);
-        b = Math.abs(b);
-        double s = a + b;
-        System.out.println("Сумма модулей " + (int) s);
-        s = a - b;
-        System.out.println("Разность модулей " + (int) s);
-        s = a * b;
-        System.out.println("Произведение модулей " + (int) s);
-        s = (double) a / b;
-        System.out.println("Частное модулей " + s);*/
-        //Begin22◦
-        //. Поменять местами содержимое переменных A и B и вывести новые значения A и B
-        /*int a = 3;
-        int b = 10;
-        int c = a;
-        a = b;
-        b = c;
-        System.out.println("a = " + a + " b = + b");*/
-        //Begin12◦
-        //Begin12◦
-        //. Даны катеты прямоугольного треугольника a и b. Найти его гипотенузу c и периметр P:
-        /*int a = 5;
-        int b = 10;
-        int c = (a*a) + (b*b);
-        int p =  a + b + c;
-        System.out.println("Гипотенуза " + c);
-        System.out.println("Периметр " + p);*/
-        //Begin13◦
-        //. Даны два круга с общим центром и радиусами R1 и R2 (R1 > R2). Найти площади этих кругов S1 и S2, а также площадь S3 кольца, внешний радиус которого равен R1, а внутренний радиус равен R2:
-        /*int R1 = 25;
-        int R2 = 5;
-        double pi = 3.14;
-        double S1 = pi * (R1 * 2);
-        double S2 = pi * (R2 * 2);
-        double S3 = S1 - S2;
-        System.out.println("Площадь круга S1:" + S1);
-        System.out.println("Площадь круга S2:" + S2);
-        System.out.println("Площаь кольца S3:" + S3);*/
-        
-        
-        
-        
-        
+        /*Scanner in = new.Scanner(System.in);
+        System.out.println("Введите целое число - кол-во сантиметров: ");
+        int l = in.scanner.nextInt();
+        System.out.println(l / 100 + " метров");*/
+        /*Scanner in = new Scanner(System.in);
+        System.out.print("Введите число байтов: ");
+        int bytes = in.nextInt();
+        System.out.println(bytes / 1024 + " килобайтов");*/
+        //Integer6◦
+        //. Дано двузначное число. Вывести вначале его левую цифру (десятки), а затем — его правую цифру (единицы). Для нахождения десятко
+        // использовать операцию деления нацело, для нахождения единиц — операцию взятия остатка от деления.
+        /*Scanner in = new Scanner(System.in);
+        System.out.print("Введит двухзначное число: ");
+        int number = in.nextInt();
+        System.out.println("Десятки " + number / 10);
+        System.out.println("Единицы " + number % 10);*/
+        //Integer7◦
+        //. Дано двузначное число. Найти сумму и произведение его цифр
+        //Integer8◦
+        //. Дано двузначное число. Вывести число, полученное при перестановке цифр исходного числа
+        /*Scanner in = new Scanner(System.in);
+        System.out.print("Дано двухзначное число: ");
+        int number = in.nextInt();
+        int one = number / 10;
+        int two = number % 10;
+        System.out.println("Перевёрнутое число: " + (two * 10 + one));*/
+        //Integer9◦
+        //. Дано трехзначное число. Используя одну операцию деления нацело,
+        //вывести первую цифру данного числа (сотни).
+        /*Scanner in = new Scanner(System.in);
+        System.out.print("Дано трёхзначное число: ");
+        int number = in.nextInt();
+        System.out.println("Сотни " + number / 100);*/
+        //Integer10◦
+        //. Дано трехзначное число. Вывести вначале его последнюю цифру
+        //(единицы), а затем — его среднюю цифру (десятки)
+        /*
+        Scanner in = new Scanner(System.in);
+        System.out.print("Введите трёхзначное число: ");
+        int number = in.nextInt();
+        System.out.println("Единицы: " + number / 10);
+        int des = in.nextInt();
+        System.out.println("Десятки: " + des);*/
+        // Integer11◦
+        //. Дано трехзначное число. Найти сумму и произведение его цифр.
+        /*
+        Scanner in = new Scanner(System.in);
+        System.out.print("Введите трёхзначное число: ");
+        int number = in.nextInt();
+        int out = number % 10;
+        int es = number / 100;
+        int bln = (number/10)%10;
+        System.out.println("Сумма чисел: " + (out + bln + es));
+        System.out.println("Произведение чисел: " + (out * bln * es));*/
+        //Integer12◦
+        //. Дано трехзначное число. Вывести число, полученное при прочтении исходного числа справа налево
+        /*
+        Scanner in = new Scanner(System.in);
+        System.out.print("Введите трёхзначное число: ");
+        int number = in.nextInt();
+        int out = number % 10;
+        int es = number / 100;
+        int bln = (number/10)%10;
+        int res = 100 * out + 10 * bln + es;
+        System.out.println("В обратном порядке " + res);*/
+        //Integer13◦
+        //. Дано трехзначное число. В нем зачеркнули первую слева цифру и
+        //приписали ее справа. Вывести полученное число.
+        /*
+        Scanner in = new Scanner(System.in);
+        System.out.print("Введите трёхзначное число: ");
+        int number = in.nextInt();
+        int sotni = number / 100;
+        int ostatok = number % 100;
+        int res = ostatok * 10 + sotni;
+        System.out.println("Убрали сотни, припиcали сотни слева " + res);*/
+
+
+
+
+
+
+
+
+
+
+
+
     }
 }
+
